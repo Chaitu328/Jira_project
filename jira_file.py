@@ -123,27 +123,24 @@ class JiraTestCaseGenerator:
         return created_count
 
 if __name__ == "__main__":
-    # Initialize the generator
     generator = JiraTestCaseGenerator()
     
-    # Specify your Epic key (e.g., "SCRUM-3")
     epic_key = "SCRUM-3"
-    
-    # Step 1: Fetch Epic details
+
     epic_data = generator.get_epic_details(epic_key)
     if epic_data:
         print("Epic Details:")
         print(json.dumps(epic_data, indent=2))
         
-        # Step 2: Generate test cases using ChatGroq
+        #Generate test cases using ChatGroq
         test_cases = generator.generate_test_cases(epic_data)
         if test_cases:
             print(f"Generated {len(test_cases)} test cases.")
             
-            # Step 3: Save the generated test cases to a CSV file
+            # Save the generated test cases to a CSV file
             generator.save_test_cases_to_csv(test_cases)
             
-            # Step 4: Optionally, create the test cases in JIRA
+            # Optionally, create the test cases in JIRA
             if input("Do you want to create the test cases in JIRA? (y/n) ").lower() == 'y':
                 created_count = generator.create_jira_test_cases(test_cases)
                 print(f"Successfully created {created_count}/{len(test_cases)} test cases in JIRA.")
