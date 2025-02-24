@@ -28,7 +28,6 @@ class JiraTestCaseGenerator:
         )
 
     def get_epic_details(self, epic_key):
-        """Fetch the Epic details using its key (e.g., SCRUM-3)."""
         try:
             epic = self.jira.issue(epic_key)
             epic_data = {
