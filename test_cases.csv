@@ -1,0 +1,23 @@
+test_case_id,test_summary,test_steps,expected_result
+TC-001,Verify that the user is able to access the Purchase Order Management System,"1. Open the Purchase Order Management System URL in a web browser.
+2. Check if the system is loaded successfully.",The Purchase Order Management System should be accessible and loaded successfully.
+TC-002,Verify that the user is able to create a new purchase order,"1. Log in to the Purchase Order Management System.
+2. Click on the 'Create Purchase Order' button.
+3. Enter the required details in the 'Create Purchase Order' form.
+4. Click on the 'Submit' button.",A new purchase order should be created successfully.
+TC-003,Verify that the user is able to view the list of purchase orders,"1. Log in to the Purchase Order Management System.
+2. Click on the 'Purchase Orders' tab.
+3. Check if the list of purchase orders is displayed.",The list of purchase orders should be displayed.
+TC-004,Verify that the user is able to view the details of a purchase order,"1. Log in to the Purchase Order Management System.
+2. Click on the 'Purchase Orders' tab.
+3. Click on the 'View' button for a purchase order.
+4. Check if the details of the purchase order are displayed.",The details of the purchase order should be displayed.
+TC-005,Verify that the user is able to edit a purchase order,"1. Log in to the Purchase Order Management System.
+2. Click on the 'Purchase Orders' tab.
+3. Click on the 'Edit' button for a purchase order.
+4. Make changes to the required fields in the 'Edit Purchase Order' form.
+5. Click on the 'Save' button.",The purchase order should be updated with the new changes.
+TC-006,Verify that the user is able to delete a purchase order,"1. Log in to the Purchase Order Management System.
+2. Click on the 'Purchase Orders' tab.
+3. Click on the 'Delete' button for a purchase order.
+4. Confirm the deletion of the purchase order.",The purchase order should be deleted successfully.
