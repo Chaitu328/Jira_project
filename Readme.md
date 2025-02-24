@@ -1,5 +1,8 @@
-# Workflow
+# Solution Diagram
 
+Below is the solution flow that demonstrates how JIRA integration and Generative AI are used to generate test cases:
+
+```plaintext
 +----------------------------+            +-------------------------+
 |   1. Fetch Epic Details     |            |   2. Feed to Generative  |
 |   (JIRA API)                |------------|   AI Model (ChatGroq)    |
